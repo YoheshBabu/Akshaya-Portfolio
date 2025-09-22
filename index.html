@@ -21,61 +21,6 @@
       background-color: black;
       border-radius: 100px;
     }
-    .holographic-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #000;
-}
-
-.holographic-card {
-  width: 300px;
-  height: 200px;
-  background: #111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 0.5s ease;
-}
-
-.holographic-card h2 {
-  color: #0ff;
-  font-size: 2rem;
-  position: relative;
-  z-index: 2;
-}
-
-.holographic-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    0deg, 
-    transparent, 
-    transparent 30%, 
-    rgba(0,255,255,0.3)
-  );
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-
-.holographic-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,255,255,0.5);
-}
-
-.holographic-card:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
-}
   </style>
 </head>
 
@@ -261,7 +206,7 @@
           <h1 style="color: rgb(16, 191, 255);"><b>Projects</b></h1>
         </div>
       </div>
-      <div class="row holographic-container">
+      <div class="row">
         <div class="col-md-5 p-3" style="background-color:  rgb(54, 54, 54);border-radius: 30px;">
           <h3 style="color: rgb(16, 191, 255);">
             <img src="https://media.licdn.com/dms/image/v2/D4D12AQGtZNPdA2bV8g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1683059625571?e=2147483647&v=beta&t=o3-CKSU2E8mHL-iixHdGcX5flF2FuWz4y2j1wq3_Qak" alt="Oracle Logo" style="height:28px;vertical-align:middle;margin-right:8px;">
@@ -278,7 +223,7 @@
         </div>
         <div class="col-md-2 p-3">
         </div>
-        <div class="col-md-5 p-3 holographic-card" style="background-color:  rgb(54, 54, 54);border-radius: 30px;">
+        <div class="col-md-5 p-3" style="background-color:  rgb(54, 54, 54);border-radius: 30px;">
           <h3 style="color: rgb(16, 191, 255);">
             <img src="https://cdn-icons-png.freepik.com/512/15916/15916005.png" alt="Inspection Logo" style="height:28px;vertical-align:middle;margin-right:8px;">
             Hands-Free Inspection System&nbsp;
